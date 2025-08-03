@@ -1,0 +1,259 @@
+:root {
+    // dark
+    --color-sidebar-background-dark-default: #202127;
+    --color-sidebar-background-dark-hover: #2D2E34;
+    --color-sidebar-background-dark-active: #393A3F;
+    --color-text-dark-default: #f0f2ff;
+    --color-text-dark-hover: #f0f2ff;
+    --color-text-dark-active: #f0f2ff;
+    --color-text-logo-dark-default: #3B82F6;
+    --color-button-background-dark-default: #202127;
+    --color-button-background-dark-active: #4B5966;
+
+    // light
+    --color-sidebar-background-light-default: #fff;
+    --color-sidebar-background-light-hover: #f0f2ff;
+    --color-sidebar-background-light-active: #f0f2ff;
+    --color-text-light-default: #97a5b9;
+    --color-text-light-hover: #091b31;
+    --color-text-light-active: #0000b5;
+    --color-text-logo-light-default: #0000b5;
+    --color-button-background-light-default: #fff;
+    --color-button-background-light-active: #e2e8f0;
+}
+
+html {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #e2e8f0;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.sliderbar {
+ height: 100vh;
+ width: 30%;
+
+
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color:var(--color-sidebar-background-light-default);
+  width: 39%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+ 
+}
+
+.logovisual {
+  padding: 1rem;
+  padding-bottom: 0.5rem; 
+  display: flex; 
+  user-select: none;
+ 
+  
+}
+
+.listvisual { 
+  display: flex; 
+  flex: 1 1 0%;
+  padding-left: 0.75rem; 
+  padding-right: 0.75rem;
+  padding-bottom: 20px;
+  user-select: none;
+
+
+ 
+
+
+}
+
+.iconVisual {
+  padding-right: 5 px;
+  &:active {
+    background-color:var(--color-sidebar-background-light-active)
+  }
+
+  &:hover {
+    background-color: var(--color-sidebar-background-light-hover);
+  }
+ 
+}
+
+.accountbuttomvisual {
+  margin-top: 1vh;
+  display: flex;
+  padding: 0.50rem;  
+  align-items: center;  
+  border-radius: 20px;
+
+ 
+}
+
+.iconAccountVisual {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 13rem;   
+  margin-left: 0.75rem; 
+  
+}
+
+.buttonVisual {
+  border: none;
+  margin-left: 200px;
+  border-radius: 20px;
+  width: 200px;
+}
+.buttonVisualTheme {
+  border: none;
+  border-radius: 20px;
+  width: 200px;
+}
+
+.LogoIsOpen {
+  overflow: hidden;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1300ms;
+}
+
+.LogoOpen {
+  width: 32px;
+  opacity: 100;
+
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1300ms;
+}
+
+.LogoClose {
+  width: 0px;
+  opacity: 0;
+
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1300ms;
+}
+
+.SliderOpen {
+  width: 30%;
+
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1300ms;
+}
+
+.SliderClose {
+  width: 6%;
+
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1300ms;
+}
+
+.ButtonOpen {
+
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1300ms;
+}
+
+.ButtonClose {
+  margin-left: 80px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1300ms;
+}
+
+.ButtonOpenTheme {
+
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1300ms;
+}
+
+.ButtonCloseTheme {
+
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1300ms;
+}
+
+.BlackTheme {
+  background-color:var(--color-sidebar-background-dark-default)
+}
+
+.WhiteTheme {
+  background-color:var(--color-sidebar-background-light-default)
+  
+}
+
+
+
+.WhiteTextIconTheme {
+  color:var(--color-text-light-default);
+
+  &:active {
+    color:var(--color-text-light-active);
+    background-color: var(--color-sidebar-background-light-active);
+    
+  }
+
+  &:hover {
+    color: var(--color-text-light-hover);
+    background-color: var(--color-sidebar-background-light-hover);
+  }
+}
+
+.BlackTextIconTheme {
+  color:var(--color-text-dark-default);
+
+  &:active {
+    color:var(--color-text-dark-active);
+    background-color: var(--color-sidebar-background-dark-active);
+  }
+
+  &:hover {
+    color: var(--color-text-dark-hover);
+    background-color: var(--color-sidebar-background-dark-hover);
+  }
+  
+}
+
+
+
+.BlackButtomTheme {
+  background-color:var(--color-button-background-dark-default);
+
+  &:active {
+    background-color: var(--color-button-background-dark-active);
+  }
+}
+
+.WhiteButtomTheme {
+  background-color:var(--color-button-background-light-default);
+  &:active {
+    background-color: var(--color-button-background-light-active);
+  }
+  
+}
+
+.ButtonSwitchWhite {
+  color:var(--color-text-light-default);
+  background-color: var(--color-sidebar-background-light-default);
+}
+
+.ButtonSwitchBlack {
+  color:var(--color-text-dark-default);
+  background-color: var(--color-sidebar-background-dark-default);
+}
+
+.buttomRoutes {
+  margin-top: 46vh;
+  width: 14rem;
+  
+}
