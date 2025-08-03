@@ -32,7 +32,7 @@ html {
 
 .sliderbar {
  height: 100vh;
- width: 42%;
+ width: 45%;
 
 
 }
@@ -42,7 +42,7 @@ html {
   display: flex;
   flex-direction: column;
   background-color:var(--color-sidebar-background-light-default);
-  width: 42%;
+  width: 71%;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   border-radius: 20px;
  
@@ -73,13 +73,7 @@ html {
 
 .iconVisual {
   padding-right: 5 px;
-  &:active {
-    background-color:var(--color-sidebar-background-light-active)
-  }
-
-  &:hover {
-    background-color: var(--color-sidebar-background-light-hover);
-  }
+ 
  
 }
 
@@ -148,7 +142,7 @@ html {
 }
 
 .SliderClose {
-  width: 7%;
+  width: 8%;
 
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -256,4 +250,18 @@ html {
   margin-top: 46vh;
   width: 14rem;
   
+}
+
+.LogoOpenMove {
+  
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1300ms;
+}
+.LogoCloseMove {
+  
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1300ms;
+  margin-left: -10px;
 }

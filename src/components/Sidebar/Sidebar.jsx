@@ -46,7 +46,7 @@ const Sidebar = (props) => {
       <aside className={`sliderbar ${isOpened ? "SliderOpen" : "SliderClose"} `}>
 <nav className={`navbar ${isTheme ? "WhiteTheme" : "BlackTheme"}`}>
   <div className='logovisual'>
-    <img src={ logo } alt="TensorFlow logo" className={`logoIsOpen ${isOpened ? "LogoOpen" : "LogoClose"}`} height={32}/>
+    <img src={ logo } alt="TensorFlow logo" className={`logoIsOpen ${isOpened ? "LogoOpenMove" : "LogoCloseMove"}`} height={32}/>
 
     <p className={`logoIsOpen ${isOpened ? "LogoOpen" : "LogoClose"} ${isTheme ? "WhiteTextIconTheme" : "BlackTextIconTheme"}`}>TensorFlow</p>
 
@@ -77,7 +77,8 @@ const Sidebar = (props) => {
                 
                 </div>
                  
-                <div className='buttomRoutes'>
+                <div className='buttomRoutes'></div>
+                <div>
   {bottomRoutes.map(route => (
  <li  className={`listvisual ${isTheme ? "WhiteTextIconTheme" : "BlackTextIconTheme"}`}>
   <div className='iconVisual'>
@@ -91,8 +92,9 @@ const Sidebar = (props) => {
                      </li>
                    
                 ))}
-                
                 </div>
+                
+                
                  
 
   <div className={`accountbuttomvisual ${isTheme ? "WhiteButtomTheme" : "BlackButtomTheme"}`}>
